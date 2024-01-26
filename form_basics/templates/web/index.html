@@ -1,0 +1,16 @@
+{#<form action="{% url 'index' %}" method="get">#}
+{#    {{ employee_form }}#}
+{##}
+{#    <button>Send</button>#}
+{#</form>#}
+
+{# FOR POST REQUEST WE SHOULD USE CSRF_TOKEN #}
+
+{# IF this does not work, you should remove password template in forms.py #}
+<form action="{% url 'index' %}" method="post">
+    {{ employee_form.as_p }}
+    {% csrf_token %}
+    <button>Send</button>
+</form>
+
+{# our context name 'employee_form' with .as_p -> changes the structure in our page #}

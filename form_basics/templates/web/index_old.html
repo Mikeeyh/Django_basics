@@ -1,0 +1,34 @@
+<form action="/" method="get"> <!-- action=CURRENT_URL, method=get -->
+
+{# Form fields #}
+    
+    {# Input #}
+    <input type="text" name="first_name"> {# single-line text #}
+    <input type="number" name="age">    
+    <input type="url" name="blog">
+    <input type="range" name="limit">
+    <input type="email" name="personal_email">
+    <input type="password" name="password">
+    <input type="hidden">  
+    
+    <input type="radio" name="gender">
+    <input type="checkbox" name="interests">
+    
+    {# TextArea #}
+    <textarea name="description"> {# multi-line text #}
+    </textarea>
+    
+    {# Dropdowns #}
+    <select name="interests">
+        <option value="1">Gaming</option>
+        <option value="2">Reading books</option>
+        <option value="3">Watching movies</option>    
+        <option value="4">Sport</option>
+    </select>
+    
+    {# Button #}
+    <button>Send</button>
+    {# Old school button method:     #}  
+    <input type="submit" value="Send">
+    
+</form>
