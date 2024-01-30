@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+
+{% block main_content %}
+    <div class="root">
+        <div class="left">
+            {% block sidebar %}
+            {% endblock %}
+        </div>
+        <div class="right">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+{# WE CAN OVERWRITE BLOCKS IN OURS BLOCKS #}

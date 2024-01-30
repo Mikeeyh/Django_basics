@@ -1,0 +1,30 @@
+{# Adding header: #}
+
+<header>
+    <div>
+        <h1><a href="{% url 'index' %}">
+            {% if title %}
+                {{ title }}
+            {% else %}
+                Mike's App
+            {% endif %}
+        </a></h1>
+        
+        {# included templates have access to the view context #}
+        {# this will show our username if we are logged in #}
+        {# if not logged in it will show 'Anonymous' #}
+        
+        {% if request.user.is_authenticated %}
+            {{ request.user }}
+        {% else %}
+            Anonymous
+        {% endif %}
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'index' %}">Index</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mike's App{% block page_title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    
+    {% block styles %} {% endblock %}
+
+    {# all pages scripts #}
+
+    {% block head_scripts %}
+    {% endblock %}
+</head>
+
+<body>
+
+{% block body_start_scripts %} {% endblock %}
+
+    {# ADDING HEADER USING INCLUDE #}
+    {% include 'partials/header.html' with title='The app about cats'%}    
+
+    <h1>Welcome to Mike's App</h1>
+
+    <p>This is an application about cats.</p>
+
+    {% block main_content %}
+        {# 'block' defines where inheritor #}
+        {# templates can insert their #}
+        {# custom/specific HTML #}
+        
+        {# We can define a default HTML #}
+        <h2>No content</h2>
+        
+    {% endblock %}
+    
+{# ADDING FOOTER USING INCLUDE #}
+{% include 'partials/footer.html' %}
+
+{% block body_end_scripts %} {% endblock %}
+</body>
+</html>
