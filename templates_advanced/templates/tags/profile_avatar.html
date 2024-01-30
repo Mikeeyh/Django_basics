@@ -1,0 +1,9 @@
+{# included templates have access to the view context #}
+{# this will show our username if we are logged in #}
+{# if not logged in it will show 'Anonymous' #}
+        
+{% if user_fullname %}
+    {{ user_fullname }}
+{% else %}
+    Anonymous
+{% endif %}

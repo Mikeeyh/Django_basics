@@ -28,3 +28,10 @@ def index(request):
 
 def about(request):
     return render(request, 'web/about.html')
+
+
+def show_bootstrap(request):  # example from bootstrap.com
+    context = {
+        'has_bootstrap': request.GET.get('has_bootstrap', False),
+    }
+    return render(request, 'web/bootstrap.html', context)

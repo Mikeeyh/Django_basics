@@ -1,3 +1,4 @@
+{% load user_tags %}
 {# Adding header: #}
 
 <header>
@@ -9,16 +10,17 @@
                 Mike's App
             {% endif %}
         </a></h1>
-        
+
         {# included templates have access to the view context #}
         {# this will show our username if we are logged in #}
         {# if not logged in it will show 'Anonymous' #}
-        
-        {% if request.user.is_authenticated %}
-            {{ request.user }}
-        {% else %}
-            Anonymous
-        {% endif %}
+{##}
+{#        {% if request.user.is_authenticated %}#}
+{#            {{ request.user }}#}
+{#        {% else %}#}
+{#            Anonymous#}
+{#        {% endif %}#}
+    {% profile_avatar %}
     </div>
 </header>
 
@@ -26,5 +28,10 @@
     <ul>
         <li><a href="{% url 'index' %}">Index</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
+    
+        {# for our bootstrap.com example: #}
+        <li><a href="{% url 'show_bootstrap' %}?has_bootstrap=1">With bootstrap</a></li>
+        <li><a href="{% url 'show_bootstrap' %}">Without bootstrap</a></li>
+    
     </ul>
 </nav>
