@@ -1,0 +1,65 @@
+{% load create_form_tag %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
+
+{#<h1>Create form </h1>#}
+{#<form action="">#}
+{#    {{ person_form.as_p }}#}
+{#</form>#}
+
+<h1>Create form (raw)</h1>
+<form action="{% url 'create-person' %}" method="post">
+
+    {{ person_form }}
+    {% csrf_token %}
+
+    <button>Create</button>
+</form>
+
+<h1>Create form (as_p)</h1>
+<form action="{% url 'create-person' %}" method="post">
+
+    {{ person_form.as_p }}
+    {% csrf_token %}
+
+    <button>Create</button>
+</form>
+
+<h1>Create form (custom)</h1>
+
+<form action="{% url 'create-person' %}" method="post">
+    {% for field in person_form %}
+        <label for="{{ field.id_for_label }}">
+            <strong>{{ field.label }}</strong>
+            {% if field.widget_type == 'select' %}
+                {# {% make_select field=field %} #}
+            {% else %}
+                {# {% make_input field=field %} #}
+                <input
+                        type="{{ field.widget_type }}"
+                        name="{{ field.html_name }}"
+                        id="{{ field.id_for_label }}"
+                        class="form-control"
+                >     
+            {% endif %}
+        </label>
+    {% endfor %}
+
+    {% csrf_token %}
+
+    <button>Create</button>
+</form>
+
+
+<h1>Create form (crispy)</h1>
+    {% crispy person_form %}
+
+
+<h1>Update form</h1>
+<form action="">
+    {{ update_person_form.as_p }}
+
+    {# For our BootstrapFormMixin: #}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <button>Update</button>
+</form>

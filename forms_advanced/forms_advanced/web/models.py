@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.core.validators import MinLengthValidator
 from django.db import models
@@ -9,9 +10,33 @@ def validate_first_name(value):
 
 
 class Person(models.Model):
+
+    MIN_LENGTH_FIRST_NAME = 2
+    MIN_LENGTH_LAST_NAME = 2
+
+    MAX_LENGTH_FIRST_NAME = 32
+    MAX_LENGTH_LAST_NAME = 32
+
     first_name = models.CharField(
-        max_length=32,
+        max_length=MAX_LENGTH_FIRST_NAME,
         validators=(
             validate_first_name,  # giving the validator as reference -> without '()'
-            MinLengthValidator(1),
-        ))
+            MinLengthValidator(MIN_LENGTH_FIRST_NAME),
+        ),
+    )
+
+    last_name = models.CharField(
+        max_length=MAX_LENGTH_LAST_NAME,
+        validators=(
+            validate_first_name,  # giving the validator as reference -> without '()'
+            MinLengthValidator(MIN_LENGTH_LAST_NAME),
+        ),
+    )
+
+    age = models.PositiveSmallIntegerField()
+
+    created_by = models.ForeignKey(
+        User,
+        on_delete=models.DO_NOTHING,
+        null=True,
+    )

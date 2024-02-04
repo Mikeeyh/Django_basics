@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # pip install django-crispy-forms /// this is for our forms
+    'crispy_forms',
+    "crispy_bootstrap4",
+
     "forms_advanced.web",
 ]
 
@@ -126,3 +130,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# for our crispy:
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
