@@ -35,6 +35,12 @@ class Person(models.Model):
 
     age = models.PositiveSmallIntegerField()
 
+    profile_image = models.ImageField(
+        upload_to="web/profile_images",
+        null=True,
+        blank=True
+    )
+
     created_by = models.ForeignKey(
         User,
         on_delete=models.DO_NOTHING,

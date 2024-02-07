@@ -1,4 +1,3 @@
-{% load create_form_tag %}
 {% load crispy_forms_filters %}
 {% load crispy_forms_tags %}
 
@@ -7,8 +6,25 @@
 {#    {{ person_form.as_p }}#}
 {#</form>#}
 
+<ul>
+    {% for person in person_list %}
+        <li>
+            {% if person.profile_image %}
+                <img src="{{ person.profile_image.url }}" height="50"/>
+            {% else %}
+                <img src="https://1.soompi.io/wp-content/uploads/2015/06/Unidentified-Person.png"
+                    height="50"/>
+            {% endif %}
+        
+            {{ person.first_name }} {{ person.last_name }}
+        </li>
+    {% endfor %}
+</ul>
+
 <h1>Create form (raw)</h1>
-<form action="{% url 'create-person' %}" method="post">
+<form action="{% url 'create-person' %}" method="post"
+      enctype="multipart/form-data" {# We tell the browser to send the files #}
+>
 
     {{ person_form }}
     {% csrf_token %}
