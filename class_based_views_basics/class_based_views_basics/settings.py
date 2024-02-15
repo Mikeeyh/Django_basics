@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    "class_based_views_basics.web.apps.WebConfig",
+    "class_based_views_basics.custom_class_base_views.apps.CustomClassBaseViewsConfig",
 ]
 
 MIDDLEWARE = [
@@ -112,13 +115,16 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.0/howto/static-files/
-
 STATIC_URL = 'static/'
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+# Media files
+"""
+1. Setup MEDIA_URL & MEDIA_ROOT
+2. Add 'static(...) in global 'urls.py'
+3. In model's field, add 'upload_to'
+"""
+
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "mediafiles"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
