@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        .nav {
+            display: flex;
+            gap: 10px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+<ul class="nav">
+    <li><a href="{% url 'todos-list' %}" >Index</a></li>
+    <li><a href="{% url 'todos-create' %}">Create todo</a></li>
+</ul>
+
+{% block content %}
+{% endblock %}
+
+{% block script_body_end %}
+{% endblock %}
+
+</body>
+</html>
+
+
+{# CUSTOM EXAMPLE WITH BOOTSTRAP AND NAV UPDATES #}
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title></title>#}
+{##}
+{#    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">#}
+{##}
+{#    <style>#}
+{#        .nav {#}
+{#            background-color: #fdf950; /* Background color */#}
+{#            border-bottom: 5px solid #288dfd; /* Bottom border */#}
+{#            color: #ff09ce; /* Active link text color */#}
+{#            font-weight: bold; /* Active link font weight */#}
+{#            margin: 0;#}
+{#            display: flex;#}
+{#            gap: 20px;#}
+{#        }#}
+{#        body {#}
+{#            background-color: #82efcf; /* Background color */#}
+{#        }#}
+{#    </style>#}
+{##}
+{#</head>#}
+{#<body>#}
+{##}
+{#<ul class="nav">#}
+{#    {% if request.path != '/' %}#}
+{#        <li><a href="{% url 'todos-list' %}">Index</a></li>#}
+{#    {% endif %}#}
+{#    {% if request.path != '/create/' %}#}
+{#        <li><a href="{% url 'todos-create' %}">Create todo</a></li>#}
+{#    {% endif %}#}
+{#</ul>#}
+{##}
+{#{% block content %}#}
+{#{% endblock %}#}
+{##}
+{#{% block script_body_end %}#}
+{#{% endblock %}#}
+{##}
+{#</body>#}
+{#</html>#}
