@@ -6,6 +6,6 @@ urlpatterns = [
 
     # Adding our app`s paths:
     path("", include('exam_music_app.web.urls')),
-    path("", include('exam_music_app.albums.urls')),
+    path("album/", include('exam_music_app.albums.urls')),
     path("", include('exam_music_app.profiles.urls')),
 ]

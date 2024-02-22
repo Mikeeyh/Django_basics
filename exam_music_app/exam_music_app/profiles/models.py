@@ -2,8 +2,10 @@ from django.core.exceptions import ValidationError
 from django.core.validators import MinLengthValidator
 from django.db import models
 
+# from exam_music_app.profiles.validators import validate_username
 
-def validate_username(username):
+
+def validate_username(username):  # IF we use it from validators.py we should remove this code
     is_valid = all(ch.isalnum() or ch == '_' for ch in username)
 
     if not is_valid:
@@ -18,6 +20,7 @@ class Profile(models.Model):
         max_length=MAX_USERNAME_LENGTH,
         validators=(
             MinLengthValidator(MIN_USERNAME_LENGTH),
+            # validate_username, # -> ADDING THIS IF WE USE THE VALIDATOR FROM OUR validators.py
         ),
         null=False,
         blank=False,
