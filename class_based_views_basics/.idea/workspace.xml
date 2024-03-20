@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35a63e82-2d8e-4cc5-8ba5-230a3db418cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/.idea/world_of_speed_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/cars/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/cars/migrations/0002_rename_car_model_car_model_alter_car_image_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/cars/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/profiles/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/profiles/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../class_based_views_advanced/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../class_based_views_advanced/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam_music_app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_music_app/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam_music_app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_music_app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../form_basics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../form_basics/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../forms_advanced/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../forms_advanced/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templates_advanced/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

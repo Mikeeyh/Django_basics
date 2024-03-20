@@ -26,7 +26,7 @@ def create_profile(request):
         "form": form,
         "no_navigation": True,  # Adding this to be able to remove navigation if no profile exists
     }
-    return render(request, 'web/home-no-profile.html', context)
+    return render(request, '', context)
 
 
 def index(request):

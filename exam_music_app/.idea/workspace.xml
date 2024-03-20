@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c1c08ab-b263-4adb-aad8-067ab71c3479" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/.idea/world_of_speed_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/cars/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/cars/migrations/0002_rename_car_model_car_model_alter_car_image_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/cars/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/profiles/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/profiles/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../world_of_speed_app/world_of_speed_app/web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../class_based_views_advanced/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../class_based_views_advanced/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../class_based_views_basics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../class_based_views_basics/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../class_based_views_basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../class_based_views_basics/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam_music_app/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam_music_app/web/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../form_basics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../form_basics/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../forms_advanced/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../forms_advanced/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templates_advanced/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +52,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Django Server.exam_music_app.executor": "Run",
+    "Python.models.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Mike/PycharmProjects/django_basics/Django_basics/exam_music_app",
+    "last_opened_file_path": "C:/Users/Mike/PycharmProjects/django_basics/Django_basics/world_of_speed_app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,7 +68,30 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django Server.exam_music_app">
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="exam_music_app" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exam_music_app/profiles" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam_music_app/profiles/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="exam_music_app" type="Python.DjangoServer" factoryName="Django server">
       <module name="exam_music_app" />
       <option name="ENV_FILES" value="" />
@@ -78,6 +118,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.models" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -96,10 +141,20 @@
       <updated>1708595575484</updated>
       <workItem from="1708595576501" duration="10000" />
       <workItem from="1708595591210" duration="15326000" />
+      <workItem from="1708757641601" duration="19347000" />
+      <workItem from="1708978532154" duration="7640000" />
+      <workItem from="1709209685336" duration="1277000" />
+      <workItem from="1709389796255" duration="2611000" />
+      <workItem from="1709395854004" duration="1665000" />
+      <workItem from="1709399769260" duration="3000" />
+      <workItem from="1709587369383" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/exam_music_app$models.coverage" NAME="models Coverage Results" MODIFIED="1708760518096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exam_music_app/profiles" />
   </component>
 </project>
